@@ -11,6 +11,8 @@ RUN apt-get install -y --no-install-recommends \
 
 RUN pip install jupyter
 RUN pip install pydruid
+RUN pip install matplotlib
+RUN pip install pandas
 
 EXPOSE 8888
 
