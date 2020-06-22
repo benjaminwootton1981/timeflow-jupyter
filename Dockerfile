@@ -21,5 +21,7 @@ RUN date >/build-date.txt
 RUN mkdir /timeflow-notebooks
 WORKDIR /timeflow-notebooks
 
+ADD example.ipynb /timeflow-notebooks
+
 CMD ["jupyter", "notebook", "--no-browser", "--allow-root", "--NotebookApp.token=''","--NotebookApp.password=''",  "--ip=0.0.0.0" ]
 
