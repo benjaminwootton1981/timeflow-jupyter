@@ -10,6 +10,7 @@ RUN apt-get install -y --no-install-recommends \
     libpq-dev 
 
 RUN pip install jupyter
+RUN pip install pydruid
 
 EXPOSE 8888
 
