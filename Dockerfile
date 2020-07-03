@@ -23,6 +23,8 @@ RUN pip install numpy
 RUN pip install uwsgi
 RUN pip install pystan
 
+COPY requirements.txt .
+
 RUN pip install -r requirements.txt
 
 
