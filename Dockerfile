@@ -14,20 +14,14 @@ RUN apt-get install -y --no-install-recommends \
     libpq-dev 
 
 RUN pip install jupyter
-RUN pip install pydruid
-RUN pip install matplotlib
-RUN pip install pandas
 RUN pip install plotly
-
 RUN pip install numpy
 RUN pip install uwsgi
-RUN pip install pystan
 RUN pip install pyspark
 
 COPY requirements.txt .
 
 RUN pip install -r requirements.txt
-
 
 EXPOSE 8888
 
