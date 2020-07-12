@@ -22,6 +22,7 @@ RUN pip install plotly
 RUN pip install numpy
 RUN pip install uwsgi
 RUN pip install pystan
+RUN pip install pyspark
 
 COPY requirements.txt .
 
